@@ -1,4 +1,5 @@
-﻿using Android.App;
+﻿using System.Threading.Tasks;
+using Android.App;
 using Android.Content;
 using Android.Content.PM;
 using Android.Net;
@@ -30,6 +31,7 @@ namespace UndertaleModToolAvalonia.Android
             Com.Kongzue.Dialogx.DialogX.Init(Application);
             MAUIBridge.AskDialog = Bindme.dAskDialog;
             MAUIBridge.InputDialog = Bindme.dInputDialog;
+            MAUIBridge.HasRequiredStoragePermission = hasStoragePermission;
             //MAUIBridge.AskDialog = async (title, message) => { return false; };
             //MAUIBridge.InputDialog = async (title, message) => { return null; };
             return base.CustomizeAppBuilder(builder)
@@ -58,6 +60,18 @@ namespace UndertaleModToolAvalonia.Android
                 return result;
             }
 
+            return true;
+        }
+
+        public async Task<bool> hasStoragePermission()
+        {
+            var status = await Permissions.CheckStatusAsync<Permissions.StorageRead>();
+            if (status != PermissionStatus.Granted)
+                status = await Permissions.RequestAsync<Permissions.StorageRead>();
+            if (status != PermissionStatus.Granted)
+                return false;
+            if (!CheckExternalStoragePermission())
+                return false;
             return true;
         }
     }

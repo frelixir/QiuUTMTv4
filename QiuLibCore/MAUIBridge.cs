@@ -69,4 +69,7 @@ public class MAUIBridge
     
     public delegate Task<string>  InputDialogImpt(string title, string messagem);
     public static InputDialogImpt? InputDialog { set; get; }
+    
+    public delegate Task<bool>  HasRequiredStoragePermissionImpt();
+    public static HasRequiredStoragePermissionImpt? HasRequiredStoragePermission { set; get; }
 }

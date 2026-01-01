@@ -514,6 +514,10 @@ public partial class MainViewModel
 
     public async void FileOpen()
     {
+        if (OperatingSystem.IsAndroid())
+        {
+            if (!await MAUIBridge.HasRequiredStoragePermission()) return;
+        }
         if (!await AskFileSave("打开新的文件前要先保存吗?"))
             return;
 
@@ -608,6 +612,11 @@ public partial class MainViewModel
     {
         if (Data is null)
             return false;
+        
+        if (OperatingSystem.IsAndroid())
+        {
+            if (!await MAUIBridge.HasRequiredStoragePermission()) return false;
+        }
 
         IFile? file = await View!.SaveFileDialog(new FilePickerSaveOptions()
         {
@@ -682,6 +691,10 @@ public partial class MainViewModel
 
     private async Task RunScript(string? filePath, IFile file)
     {
+        if (OperatingSystem.IsAndroid())
+        {
+            if (!await MAUIBridge.HasRequiredStoragePermission()) return;
+        }
         string text;
         if (filePath == null)
         {
