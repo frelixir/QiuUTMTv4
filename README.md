@@ -1,5 +1,5 @@
 # Qiuming Undertale Mod Tool For Android V4 (QiuUTMTv4)
-![GitHub Release](https://img.shields.io/github/v/release/GenOuka/QiuUTMTv4)
+![GitHub Release](https://img.shields.io/github/v/release/QiumingOrg/QiuUTMTv4)
 
 ---
 
