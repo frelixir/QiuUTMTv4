@@ -124,8 +124,8 @@ public partial class MainViewModel
         ];
 
         Me = this;
-
-        GenerateScriptsSubMenuItems();
+        if (OperatingSystem.IsAndroid()||OperatingSystem.IsWindows())
+            GenerateScriptsSubMenuItems();
     }
 
     public static MainViewModel Me;
@@ -510,12 +510,13 @@ public partial class MainViewModel
         }
     }
 
-    public async void FileOpen()
+    public async Task FileOpen()
     {
         if (OperatingSystem.IsAndroid())
         {
             if (!await MAUIBridge.HasRequiredStoragePermission()) return;
         }
+
         if (!await AskFileSave("打开新的文件前要先保存吗?"))
             return;
 
@@ -524,8 +525,8 @@ public partial class MainViewModel
             Title = "Open data file",
             FileTypeFilter = dataFileTypes,
         });
-        
-        if (files is null||files.Count != 1)
+
+        if (files is null || files.Count != 1)
             return;
 
         CloseData();
@@ -562,10 +563,7 @@ public partial class MainViewModel
                 {
                     Header = info.Name
                 };
-                dirM.Click += async (e, r) =>
-                {
-                    await RunScript(file,new QiuStrongerFile(info));
-                };
+                dirM.Click += async (e, r) => { await RunScript(file, new QiuStrongerFile(info)); };
                 items.Add(dirM);
             }
         }
@@ -591,7 +589,7 @@ public partial class MainViewModel
     {
         if (Data is null)
             return false;
-        
+
         if (OperatingSystem.IsAndroid())
         {
             if (!await MAUIBridge.HasRequiredStoragePermission()) return false;
@@ -660,7 +658,7 @@ public partial class MainViewModel
             ],
         });
 
-        if (files is null||files.Count != 1)
+        if (files is null || files.Count != 1)
             return;
 
         var file = files[0];
@@ -674,6 +672,7 @@ public partial class MainViewModel
         {
             if (!await MAUIBridge.HasRequiredStoragePermission()) return;
         }
+
         string text;
         if (filePath == null)
         {
@@ -738,23 +737,24 @@ public partial class MainViewModel
             $"UndertaleModTool by the Underminers team\nUndertaleModToolAvalonia by luizzeroxis\nQiuUTMTv4 by 秋冥散雨_GenOuka\n\nLicensed under the GNU General Public License Version 3.",
             title: "关于");
     }
-    
+
     public async void Donate()
     {
         TabItemViewModel tab = new(new DonateViewModel());
         Tabs.Add(tab);
         TabSelected = tab;
     }
-    
+
     public async void QQGroup()
     {
-        await View!.LaunchUriAsync(new Uri("https://qm.qq.com/cgi-bin/qm/qr?k=jgxnT0-Op9FsJm-J2tgqvOnWa92hdoiY&jump_from=webapi&authKey=CLULWataQkeYLNjKC5Pko38y9M+ErvLb0R7GeJ/EcVBfXWn7EE7Oi0HThlAJrxBn"));
+        await View!.LaunchUriAsync(new Uri(
+            "https://qm.qq.com/cgi-bin/qm/qr?k=jgxnT0-Op9FsJm-J2tgqvOnWa92hdoiY&jump_from=webapi&authKey=CLULWataQkeYLNjKC5Pko38y9M+ErvLb0R7GeJ/EcVBfXWn7EE7Oi0HThlAJrxBn"));
     }
-    
+
     public async void Bilibili()
-        {
-            await View!.LaunchUriAsync(new Uri("https://space.bilibili.com/3493116076100126"));
-        }
+    {
+        await View!.LaunchUriAsync(new Uri("https://space.bilibili.com/3493116076100126"));
+    }
 
     public async void DataItemAdd(IList list)
     {

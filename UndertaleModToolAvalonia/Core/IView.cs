@@ -65,7 +65,7 @@ public interface IView
     public async Task<MessageWindow.Result> MessageDialog(string message, string? title = null, bool ok = true,
         bool yes = false, bool no = false, bool cancel = false)
     {
-        if (OperatingSystem.IsAndroid())
+        if (!OperatingSystem.IsWindows())
         {
             return await CommonDialog(message, title, ok, yes, no, cancel);
         }
@@ -197,7 +197,7 @@ public interface IView
     public async Task<string?> TextBoxDialog(string message, string text = "", string? title = null,
         bool isMultiline = false, bool isReadOnly = false)
     {
-        if (OperatingSystem.IsAndroid())
+        if (!OperatingSystem.IsWindows())
         {
             return await CommonTextDialog(message, title, text);
         }
@@ -208,7 +208,7 @@ public interface IView
 
     public ILoaderWindow LoaderOpen()
     {
-        if (OperatingSystem.IsAndroid())
+        if (!OperatingSystem.IsWindows())
         {
             return new LoaderWindow.LoaderWindowDroid(View);
         }
@@ -221,7 +221,7 @@ public interface IView
 
     public async Task SettingsDialog()
     {
-        if (OperatingSystem.IsAndroid())
+        if (!OperatingSystem.IsWindows())
         {
             TabItemViewModel tab = new(new SettingsViewModel());
             MainViewModel.Me.Tabs.Add(tab);
@@ -238,7 +238,7 @@ public interface IView
 
     public void SearchInCodeOpen()
     {
-        if (OperatingSystem.IsAndroid())
+        if (!OperatingSystem.IsWindows())
         {
             TabItemViewModel tab = new(new SearchInCodeViewModel());
             MainViewModel.Me.Tabs.Add(tab);
