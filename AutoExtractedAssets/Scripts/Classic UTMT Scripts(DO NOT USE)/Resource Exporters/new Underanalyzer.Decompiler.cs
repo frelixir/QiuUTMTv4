@@ -1,0 +1,1 @@
+new Underanalyzer.Decompiler.DecompileContext(DECOMPILE_CONTEXT.Value,code).DecompileToString()
