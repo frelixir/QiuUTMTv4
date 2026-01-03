@@ -1,11 +1,18 @@
 # Qiuming Undertale Mod Tool For Android V4 (QiuUTMTv4)
-![GitHub Release](https://img.shields.io/github/v/release/QiumingOrg/QiuUTMTv4)
+![GitHub Release](https://img.shields.io/github/v/release/QiumingOrg/QiuUTMTv4?style=flat)
+![GitHub forks](https://img.shields.io/github/forks/QiumingOrg/QiuUTMTv4?style=flat)
+![GitHub Repo stars](https://img.shields.io/github/stars/QiumingOrg/QiuUTMTv4?style=flat)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/QiumingOrg/QiuUTMTv4/total)
+
 
 ---
 
-[下载发行版(Release)](https://github.com/QiumingOrg/QiuUTMTv4/releases)|[反馈(Feedback)](https://github.com/QiumingOrg/QiuUTMTv4/issues)|[文档(Document)](https://github.com/QiumingOrg/QiuUTMTv4/wiki)
+[下载发行版(Release)](https://github.com/QiumingOrg/QiuUTMTv4/releases)|
+[反馈(Feedback)](https://github.com/QiumingOrg/QiuUTMTv4/issues)|
+[文档(Document)](https://github.com/QiumingOrg/QiuUTMTv4/wiki)
 
-[欢迎给我的哔哩哔哩给个三连支持！(My Biibili)](https://space.bilibili.com/3493116076100126)
+[![Static Badge](https://img.shields.io/badge/Bilibili-%E7%A7%8B%E5%86%A5%E6%95%A3%E9%9B%A8__GenOuka-blue?style=flat-square)](https://space.bilibili.com/3493116076100126)
+[![Static Badge](https://img.shields.io/badge/Discord-qiuming__official-blue?style=flat-square)](https://discord.com/users/1124397340627845200)
 
 * * *
 
