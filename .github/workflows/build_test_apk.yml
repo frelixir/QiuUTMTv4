@@ -18,10 +18,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v6
       with:
-        submodules: true
-
-    - name: Update submodules
-      run: git submodule update --init --recursive
+        submodules: recursive
 
     - name: Install .NET Core
       uses: actions/setup-dotnet@v4
