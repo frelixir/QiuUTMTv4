@@ -1,34 +1,26 @@
-# Qiuming Undertale Mod Tool For Android V4 (QiuUTMTv4)
+# Qiuming UndertaleModTool For Android (QiuUTMTv4)
 ![GitHub Release](https://img.shields.io/github/v/release/QiumingOrg/QiuUTMTv4?style=flat)
-![GitHub forks](https://img.shields.io/github/forks/QiumingOrg/QiuUTMTv4?style=flat)
 ![GitHub Repo stars](https://img.shields.io/github/stars/QiumingOrg/QiuUTMTv4?style=flat)
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/QiumingOrg/QiuUTMTv4/total)
 
+[![Static Badge](https://img.shields.io/badge/Bilibili-%E7%A7%8B%E5%86%A5%E6%95%A3%E9%9B%A8__GenOuka-purple?style=flat-square)](https://space.bilibili.com/3493116076100126)[![Static Badge](https://img.shields.io/badge/Discord-qiuming__official-purple?style=flat-square)](https://discord.com/users/1124397340627845200)
 
----
+This is an amazing UndertaleModTool Cross-platform application (specially for mobile).
 
-[下载发行版(Release)](https://github.com/QiumingOrg/QiuUTMTv4/releases)|
+这是一个专为跨平台（尤其是移动端）设计的UndertaleModTool 的独立实现。
+
 [反馈(Feedback)](https://github.com/QiumingOrg/QiuUTMTv4/issues)|
 [文档(Document)](https://github.com/QiumingOrg/QiuUTMTv4/wiki)
+---
+## 下载/Downloads
 
-[![Static Badge](https://img.shields.io/badge/Bilibili-%E7%A7%8B%E5%86%A5%E6%95%A3%E9%9B%A8__GenOuka-blue?style=flat-square)](https://space.bilibili.com/3493116076100126)
-[![Static Badge](https://img.shields.io/badge/Discord-qiuming__official-blue?style=flat-square)](https://discord.com/users/1124397340627845200)
-
-* * *
+|         Releases(版本)         | URL(链接) 	                                                                                    |
+|:----------------------------:|----------------------------------------------------------------------------------------------|
+| Latest Stable Version(最新稳定版) | [下载(Download)](https://github.com/QiumingOrg/QiuUTMTv4/releases)                             |
+|  Latest Test Build(最新测试构建)   | [下载(Download)](https://github.com/QiumingOrg/QiuUTMTv4/actions/workflows/build_test_apk.yml) |
 
 (Both application and document are written in Chinese currently. If you wish to have your language in app or documents,welcome to PR one!)
 
-* * *
-
-This is an amazing Undertale Mod Tool GUI for Android (Standalone implement).
-
-At present, the vast majority of functions have been implemented and can be operated in a manner similar to the computer version.
-
-这是一个专为Android平台设计的Undertale Mod Tool GUI客户端（独立实现）。
-
-目前已经实现了绝大多数功能，可以进行接近电脑版的操作。
-
----
 ## 截图/Screenshot
 
 ![Screenshot](images/Screenshot_2026-01-03-02-40-56-328_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-03-02-41-23-230_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-02-23-25-55-985_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-02-23-27-24-434_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-03-02-38-07-510_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-03-02-39-48-055_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-03-02-40-02-265_com.genouka.qi.jpg) ![Screenshot](images/Screenshot_2026-01-03-02-40-40-477_com.genouka.qi.jpg)
@@ -39,17 +31,21 @@ At present, the vast majority of functions have been implemented and can be oper
 
 QiuLibCore、QiuSkiaBridge、QiuUTMT三个模块在不引用 GPL3.0 的模块的时候以MPL2.0进行授权，在引用 GPL3.0 的模块的时候以 GPL3.0 或更新版本进行授权。
 
+其他文件包含许可证的按照其许可证授权，
+
 这样做是为了以后能够解耦合的将代码运用于其他项目。
 
-其余未放置LICENSE文件的目录下的代码基于GPL3.0或更新版本进行授权。
+其余未声明许可证的代码基于GPL3.0或更新版本进行授权。
 
 Prohibit uploading to app stores or platforms such as Google Play, as well as redistributing content after adding advertisements or other similiar actions.
 
 The QiuLibCore, QiuSkiaBridge, and QiuUTMT modules are authorized using MPL2.0 when not referencing GPL3.0 modules, and GPL3.0 or later versions when referencing GPL3.0 modules.
 
+Other files which have license themselves are authorized using those licenses.
+
 This is done in order to decouple and apply the code to other projects in the future.
 
-The code in the directory where the LICENSE file is not placed is authorized based on GPL3.0 or later versions.
+The remaining code without a declared license is authorized based on GPL3.0 or later versions.
 
 ## 鸣谢/Thanks
 如果没有以下项目作为基础，本项目将永远不会诞生！
@@ -58,9 +54,9 @@ Without the following projects as a foundation, this project would never have be
 
 - [UndertaleModTool(UnderminersTeam)](https://github.com/UnderminersTeam/UndertaleModTool/)
 - [UndertaleModTool(luizzeroxis)](https://github.com/luizzeroxis/UndertaleModTool/)
-- [GUTMT4A(QiuUTMTv3)](https://github.com/QiumingOrg/GUTMT4A)
+- [GUTMT4A(Genouka)](https://github.com/QiumingOrg/GUTMT4A)
 
-## 捐赠本项目/Donate
+## 捐赠/Donate
 
 Wechat/微信:
 ![mm_reward_qrcode](https://github.com/user-attachments/assets/8f442af8-fba5-41fb-ac19-0977744520a0)
