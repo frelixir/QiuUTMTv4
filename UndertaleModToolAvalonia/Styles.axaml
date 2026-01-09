@@ -6,6 +6,9 @@
     <StyleInclude Source="avares://Avalonia.Controls.ColorPicker/Themes/Fluent/Fluent.xaml" />
     <StyleInclude Source="avares://AvaloniaEdit/Themes/Fluent/AvaloniaEdit.xaml" />
     <StyleInclude Source="avares://Avalonia.Controls.TreeDataGrid/Themes/Fluent.axaml"/>
+    <StyleInclude Source="avares://Semi.Avalonia.ColorPicker/Index.axaml" />
+    <StyleInclude Source="avares://Semi.Avalonia.DataGrid/Index.axaml" />
+    <StyleInclude Source="avares://Semi.Avalonia.TreeDataGrid/Index.axaml" />
 
     <!-- Basic controls -->
     <Style Selector="Window">
@@ -33,7 +36,7 @@
     </Style>
     <Style Selector="TabItem,TabStripItem">
         <Setter Property="FontSize" Value="12" />
-        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="MinHeight" Value="18" />
     </Style>
 
     <Style Selector="Label">
@@ -240,10 +243,6 @@
             <Setter Property="Margin" Value="0,8,0,0" />
             <Setter Property="MinHeight" Value="16" />
         </Style>
-    </Style>
-
-    <Style Selector="Window.SettingsWindow,undertaleModToolAvalonia|SettingsWindow">
-        <Setter Property="Padding" Value="16" />
     </Style>
 
     <Style Selector="Window.SearchInCodeWindow,undertaleModToolAvalonia|SearchInCodeView">
