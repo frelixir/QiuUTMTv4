@@ -7,6 +7,10 @@ setlocal enabledelayedexpansion
 
 set "file=%ExecutePath%..\UndertaleModToolAvalonia.Android\bin\Any CPU\Debug\net9.0-android\com.genouka.qiuutmtv4-Signed.apk"
 set "classesfile=%ExecutePath%classes.dex"
+
+:: Prebuild Resources only for github actions because local build will automatically prebuild resources
+call "%ExecutePath%prebuild_resources.bat"
+
 msbuild "%ExecutePath%..\UndertaleModToolAvalonia.Android\UndertaleModToolAvalonia.Android.csproj" /t:SignAndroidPackage /p:Configuration=Debug /p:Platform="Any CPU"
 rmdir /s /q "%ExecutePath%..\UndertaleModToolAvalonia.Android\obj\Any CPU\Debug\net9.0-android\android\.__override__"
 ren "%ExecutePath%..\UndertaleModToolAvalonia.Android\obj\Any CPU\Debug\net9.0-android\android\assets" ".__override__"
