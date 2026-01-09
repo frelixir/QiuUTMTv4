@@ -69,11 +69,11 @@ public class MAUIBridge
         return await tcs.Task;
     }
     public delegate Task<bool>  AskDialogImpt(string title, string message);
-    public static AskDialogImpt? AskDialog { set; get; }
+    public static AskDialogImpt? AskDialog { set; get; } = (a, b) => { throw new NotImplementedException();};
     
     public delegate Task<string?>  InputDialogImpt(string title, string message);
-    public static InputDialogImpt? InputDialog { set; get; }
+    public static InputDialogImpt? InputDialog { set; get; } = (a, b) => { throw new NotImplementedException();};
     
     public delegate Task<bool>  HasRequiredStoragePermissionImpt();
-    public static HasRequiredStoragePermissionImpt? HasRequiredStoragePermission { set; get; }
+    public static HasRequiredStoragePermissionImpt? HasRequiredStoragePermission { set; get; } = () => { throw new NotImplementedException();};
 }
