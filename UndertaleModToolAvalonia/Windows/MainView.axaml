@@ -82,7 +82,7 @@
                                     <!-- <MenuItem Header="导出" IsEnabled="False"> -->
                                     <!-- </MenuItem> -->
                                     <MenuItem Header="{x:Static assets:Strings.SearchCodeText}">
-                                        <MenuItem Header="{x:Static assets:Strings.QuitText}" Command="{Binding ToolsSearchInCode}" />
+                                        <MenuItem Header="{x:Static assets:Strings.SearchCodeText}" Command="{Binding ToolsSearchInCode}" />
                                         <MenuItem Header="寻找未被引用的资源" IsEnabled="False" />
                                     </MenuItem>
                                     <MenuItem Header="{x:Static assets:Strings.ScriptText}">
@@ -96,7 +96,7 @@
                                         <MenuItem Header="{x:Static assets:Strings.BilibiliText}" Command="{Binding Bilibili}" />
                                         <MenuItem Header="{x:Static assets:Strings.AboutText}" Command="{Binding HelpAbout}" />
                                     </MenuItem>
-                                </MenuItem>
+                                </MenuItem>  
                                 <MenuItem
                                     Padding="2"
                                     Margin="10,0,0,0"
@@ -165,7 +165,7 @@
                                 </Setter>
                                 <Setter Property="ContextMenu">
                                     <ContextMenu>
-                                        <MenuItem Header="关闭标签页" Click="TabMenu_Close_Click" />
+                                        <MenuItem Header="{x:Static assets:Strings.CloseTabText}" Click="TabMenu_Close_Click" />
                                     </ContextMenu>
                                 </Setter>
                                 <Setter Property="Padding">0</Setter>
@@ -181,115 +181,115 @@
                                                 <TextBlock Text="{Binding Heading}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:GeneralInfoViewModel">
-                                                <TextBlock Text="基本信息" />
+                                                <TextBlock Text="{x:Static assets:Strings.GeneralInfoTabHeading}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:GlobalInitScriptsViewModel">
-                                                <TextBlock Text="全局进入脚本" />
+                                                <TextBlock Text="{x:Static assets:Strings.GlobalInitScriptsHeading}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:GameEndScriptsViewModel">
-                                                <TextBlock Text="游戏终止脚本" />
+                                                <TextBlock Text="{x:Static assets:Strings.GameEndScriptsHeading}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:SearchInCodeViewModel">
-                                                <TextBlock Text="代码检索" />
+                                                <TextBlock Text="{x:Static assets:Strings.SearchInCodeHeading}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:SettingsViewModel">
-                                                <TextBlock Text="设置" />
+                                                <TextBlock Text="{x:Static assets:Strings.SettingsHeading}" />
                                             </DataTemplate>
                                             <!-- Resources -->
                                             <DataTemplate DataType="l:UndertaleAudioGroupViewModel">
                                                 <TextBlock
-                                                    Text="{Binding AudioGroup.Name.Content, StringFormat=Audio group - {0}}" />
+                                                    Text="{Binding AudioGroup.Name.Content, StringFormat={x:Static assets:Strings.UndertaleAudioGroupViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleSoundViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Sound.Name.Content, StringFormat=Sound - {0}}" />
+                                                    Text="{Binding Sound.Name.Content, StringFormat={x:Static assets:Strings.UndertaleSoundViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleSpriteViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Sprite.Name.Content, StringFormat=Sprite - {0}}" />
+                                                    Text="{Binding Sprite.Name.Content, StringFormat={x:Static assets:Strings.UndertaleSpriteViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleBackgroundViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Background.Name.Content, StringFormat=Background - {0}}" />
+                                                    Text="{Binding Background.Name.Content, StringFormat={x:Static assets:Strings.UndertaleBackgroundViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertalePathViewModel">
-                                                <TextBlock Text="{Binding Path.Name.Content, StringFormat=Path - {0}}" />
+                                                <TextBlock Text="{Binding Path.Name.Content, StringFormat={x:Static assets:Strings.UndertalePathViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleScriptViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Script.Name.Content, StringFormat=Script - {0}}" />
+                                                    Text="{Binding Script.Name.Content, StringFormat={x:Static assets:Strings.UndertaleScriptViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleShaderViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Shader.Name.Content, StringFormat=Shader - {0}}" />
+                                                    Text="{Binding Shader.Name.Content, StringFormat={x:Static assets:Strings.UndertaleShaderViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleFontViewModel">
-                                                <TextBlock Text="{Binding Font.Name.Content, StringFormat=Font - {0}}" />
+                                                <TextBlock Text="{Binding Font.Name.Content, StringFormat={x:Static assets:Strings.UndertaleFontViewModelHeading}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleTimelineViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Timeline.Name.Content, StringFormat=Timeline - {0}}" />
+                                                    Text="{Binding Timeline.Name.Content, StringFormat={x:Static assets:Strings.UndertaleTimelineViewModelHeading}}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleGameObjectViewModel">
                                                 <TextBlock
-                                                    Text="{Binding GameObject.Name.Content, StringFormat=Game object - {0}}" />
+                                                    Text="{Binding GameObject.Name.Content, StringFormat={x:Static assets:Strings.Game_object____0}}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleRoomViewModel">
-                                                <TextBlock Text="{Binding Room.Name.Content, StringFormat=Room - {0}}" />
+                                                <TextBlock Text="{Binding Room.Name.Content, StringFormat={x:Static assets:Strings.Room____0}}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleExtensionViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Extension.Name.Content, StringFormat=Extension - {0}}" />
+                                                    Text="{Binding Extension.Name.Content, StringFormat={x:Static assets:Strings.Extension____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleTexturePageItemViewModel">
                                                 <TextBlock
-                                                    Text="{Binding TexturePageItem.Name.Content, StringFormat=Texture page item - {0}}" />
+                                                    Text="{Binding TexturePageItem.Name.Content, StringFormat={x:Static assets:Strings.Texture_page_item____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleCodeViewModel">
-                                                <TextBlock Text="{Binding Code.Name.Content, StringFormat=Code - {0}}" />
+                                                <TextBlock Text="{Binding Code.Name.Content, StringFormat={x:Static assets:Strings.Code____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleVariableViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Variable.Name.Content, StringFormat=Variable - {0}}" />
+                                                    Text="{Binding Variable.Name.Content, StringFormat={x:Static assets:Strings.Variable____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleFunctionViewModel">
                                                 <TextBlock
-                                                    Text="{Binding Function.Name.Content, StringFormat=Function - {0}}" />
+                                                    Text="{Binding Function.Name.Content, StringFormat={x:Static assets:Strings.Function____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleCodeLocalsViewModel">
                                                 <TextBlock
-                                                    Text="{Binding CodeLocals.Name.Content, StringFormat=Code locals - {0}}" />
+                                                    Text="{Binding CodeLocals.Name.Content, StringFormat={x:Static assets:Strings.Code_locals____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleStringViewModel">
-                                                <TextBlock Text="{Binding String.Content, StringFormat=String - {0}}" />
+                                                <TextBlock Text="{Binding String.Content, StringFormat={x:Static assets:Strings.String____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleEmbeddedTextureViewModel">
                                                 <TextBlock
-                                                    Text="{Binding EmbeddedTexture.Name.Content, StringFormat=Embedded texture - {0}}" />
+                                                    Text="{Binding EmbeddedTexture.Name.Content, StringFormat={x:Static assets:Strings.Embedded_texture____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleEmbeddedAudioViewModel">
                                                 <TextBlock
-                                                    Text="{Binding EmbeddedAudio.Name.Content, StringFormat=Embedded audio - {0}}" />
+                                                    Text="{Binding EmbeddedAudio.Name.Content, StringFormat={x:Static assets:Strings.Embedded_audio____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleTextureGroupInfoViewModel">
                                                 <TextBlock
-                                                    Text="{Binding TextureGroupInfo.Name.Content, StringFormat=Texture group information - {0}}" />
+                                                    Text="{Binding TextureGroupInfo.Name.Content, StringFormat={x:Static assets:Strings.Texture_group_information____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleEmbeddedImageViewModel">
                                                 <TextBlock
-                                                    Text="{Binding EmbeddedImage.Name.Content, StringFormat=Embedded image - {0}}" />
+                                                    Text="{Binding EmbeddedImage.Name.Content, StringFormat={x:Static assets:Strings.Embedded_image____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleParticleSystemViewModel">
                                                 <TextBlock
-                                                    Text="{Binding ParticleSystem.Name.Content, StringFormat=Particle system - {0}}" />
+                                                    Text="{Binding ParticleSystem.Name.Content, StringFormat={x:Static assets:Strings.Particle_system____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:UndertaleParticleSystemEmitterViewModel">
                                                 <TextBlock
-                                                    Text="{Binding ParticleSystemEmitter.Name.Content, StringFormat=Particle system emitter - {0}}" />
+                                                    Text="{Binding ParticleSystemEmitter.Name.Content, StringFormat={x:Static assets:Strings.Particle_system_emitter____0}}" />
                                             </DataTemplate>
                                             <DataTemplate DataType="l:DonateViewModel">
                                                 <TextBlock
-                                                    Text="捐赠" />
+                                                    Text="{x:Static assets:Strings.Donate}" />
                                             </DataTemplate>
                                         </ContentControl.DataTemplates>
                                     </ContentControl>
@@ -455,10 +455,10 @@
                                     CornerRadius="3"
                                     Padding="10" Margin="20">
                                 <StackPanel Orientation="Horizontal">
-                                    <Button Name="ButtonOk" Foreground="#ffeeeeee">确认</Button>
-                                    <Button Name="ButtonYes" Foreground="#ffeeeeee">是</Button>
-                                    <Button Name="ButtonNo" Foreground="#ffeeeeee">否</Button>
-                                    <Button Name="ButtonCancel" Foreground="#ffeeeeee">取消</Button>
+                                    <Button Name="ButtonOk" Foreground="#ffeeeeee" Content="{x:Static assets:Strings.OK}"/>
+                                    <Button Name="ButtonYes" Foreground="#ffeeeeee" Content="{x:Static assets:Strings.Yes}"/>
+                                    <Button Name="ButtonNo" Foreground="#ffeeeeee" Content="{x:Static assets:Strings.No}"/>
+                                    <Button Name="ButtonCancel" Foreground="#ffeeeeee" Content="{x:Static assets:Strings.Cancel}"/>
                                 </StackPanel>
                             </Border>
                         </StackPanel>
