@@ -318,4 +318,232 @@
     <value>English</value>
     <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
   </data>
+  <data name="User_Interface" xml:space="preserve">
+    <value>User Interface</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme:</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Follow_System" xml:space="preserve">
+    <value>Follow System</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Light" xml:space="preserve">
+    <value>Light</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Dark" xml:space="preserve">
+    <value>Dark</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="OpenNewResourceAfterCreatingIt" xml:space="preserve">
+    <value>Open new resource after create it</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Enable_syntax_highlighting" xml:space="preserve">
+    <value>Enable syntax highlighting</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Automatically_compile_and_decompile" xml:space="preserve">
+    <value>Automatically compile and decompile code on lost focus</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="EnableRoomGridByDefault" xml:space="preserve">
+    <value>Enable room grid by default</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="DefaultRoomGridSize" xml:space="preserve">
+    <value>Default room grid size</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Script_Execution" xml:space="preserve">
+    <value>Script Execution</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Use_QiuUTMTv3_Script_Engine_to_execute" xml:space="preserve">
+    <value>Use QiuUTMTv3 Script Engine to execute scripts (recommend, only work on Android)</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Use_CSS_hex_color_literals" xml:space="preserve">
+    <value>Use CSS hex color literals</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Always_use_semicolons" xml:space="preserve">
+    <value>Always use semicolons</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Open_block_braces_on_same_line" xml:space="preserve">
+    <value>Open block braces on same line</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Create_enum_declarations" xml:space="preserve">
+    <value>Create enum declarations</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Print_warnings" xml:space="preserve">
+    <value>Print warnings</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Named_instance_ID_prefix" xml:space="preserve">
+    <value>Named instance ID prefix:</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__color_constants_can_be" xml:space="preserve">
+    <value>If enabled, color constants can be formatted in the #RRGGBB hex format.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__all_statements_that_can" xml:space="preserve">
+    <value>If enabled, all statements that can have a semicolon after them will.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__the_curly_braces_used" xml:space="preserve">
+    <value>If enabled, the curly braces used to open a block will be placed on the same line as the statement it belongs to, rather than placing the brace on its own line.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__enum_declarations_identified" xml:space="preserve">
+    <value>If enabled, enum declarations identified during decompilation will always be printed to decompiled output.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__warnings_generated_during" xml:space="preserve">
+    <value>If enabled, warnings generated during decompilation will be printed as comments.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Prefix_used_for_named_instance_IDs" xml:space="preserve">
+    <value>Prefix used for named instance IDs when found by decompiler, and for compilation. Change this value if it conflicts with variable names.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Indent_string" xml:space="preserve">
+    <value>Indent string:</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Remove_block_braces_if_single_line" xml:space="preserve">
+    <value>Remove block braces if single line</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__blocks_that_contain_a" xml:space="preserve">
+    <value>If enabled, blocks that contain a single line will have its braces removed, where possible. For if/else chains, all blocks must be single lines.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Enum_macro_declarations_at_top_of" xml:space="preserve">
+    <value>Enum/macro declarations at top of code</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__enums_and_macros_will" xml:space="preserve">
+    <value>If enabled, enums and macros will appear at the start (top) of decompiled output, rather than at the end (bottom).</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Allow_leftover_data_on_VM_stack" xml:space="preserve">
+    <value>Allow leftover data on VM stack</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__data_left_over_on_the" xml:space="preserve">
+    <value>If enabled, data left over on the VM stack will be treated as a warning rather than an error.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Add_empty_lines" xml:space="preserve">
+    <value>Add empty lines:</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Select_specific_syntax_to_add_empty" xml:space="preserve">
+    <value>Select specific syntax to add empty lines before, after, or around.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Around_branch_statements" xml:space="preserve">
+    <value>Around branch statements</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__adds_an_empty_line_before" xml:space="preserve">
+    <value>If enabled, adds an empty line before and after branch statements.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Before_switch_cases" xml:space="preserve">
+    <value>Before switch cases</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Around_function_declarations" xml:space="preserve">
+    <value>Around function declarations</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__adds_an_empty_line_before1" xml:space="preserve">
+    <value>If enabled, adds an empty line before (a chain) of &amp;quot;case&amp;quot; entries in a switch statement.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__adds_an_empty_line_before2" xml:space="preserve">
+    <value>If enabled, adds an empty line before and after a function declaration, even if it is anonymous.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="After_local_variable_declarations" xml:space="preserve">
+    <value>After local variable declarations</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__adds_an_empty_line_after" xml:space="preserve">
+    <value>If enabled, adds an empty line after block-scoped local variable declarations.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="After_switch_cases" xml:space="preserve">
+    <value>After switch cases</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__adds_an_empty_line_after1" xml:space="preserve">
+    <value>If enabled, adds an empty line after (a chain) of &amp;quot;case&amp;quot; entries in a switch statement.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Around_static_initialization" xml:space="preserve">
+    <value>Around static initialization</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__adds_an_empty_line_before3" xml:space="preserve">
+    <value>If enabled, adds an empty line before and after static initialization, grouping together consecutive statics if possible.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Perform_cleanups" xml:space="preserve">
+    <value>Perform cleanups:</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Select_specific_cleanup_operations" xml:space="preserve">
+    <value>Select specific cleanup operations for the decompiler to perform. Disabling these may make code more ugly or &amp;quot;incorrect,&amp;quot; but can show underlying logic.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Try_catch_finally_rewriting" xml:space="preserve">
+    <value>Try/catch/finally rewriting</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__compiler_generated_code" xml:space="preserve">
+    <value>If enabled, compiler-generated code and logic for try/catch/finally statements is rewritten to (attempt to) look like the original code.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Default_argument_values" xml:space="preserve">
+    <value>Default argument values</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__syntax_for_default_named" xml:space="preserve">
+    <value>If enabled, syntax for default named function arguments will be used. Compiler-generated if statements are transformed to do this, maintaining accuracy.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Scope_local_variable_declarations" xml:space="preserve">
+    <value>Scope local variable declarations</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__local_variable_declarations" xml:space="preserve">
+    <value>If enabled, local variable declarations will be placed according to their scopes, which are detected based on usage in the code.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Transform_else_into_continue" xml:space="preserve">
+    <value>Transform else into continue</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__certain_usages_of__quot" xml:space="preserve">
+    <value>If enabled, certain usages of &amp;quot;else&amp;quot; inside of a loop can be transformed into &amp;quot;continue&amp;quot; statements, which can make code easier to read. This only happens if accuracy can be maintained.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="If_enabled__certain_builtin_globals" xml:space="preserve">
+    <value>If enabled, certain builtin globals (such as &amp;quot;view_xview&amp;quot;), when detected to be used without an array accessor, will be printed as such, rather than using compiler-generated syntax.</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
+  <data name="Builtin_array_variable_syntax" xml:space="preserve">
+    <value>Builtin array variable syntax</value>
+    <comment>Used in UndertaleModToolAvalonia\ResourceViews\SettingsView.axaml document</comment>
+  </data>
 </root>
