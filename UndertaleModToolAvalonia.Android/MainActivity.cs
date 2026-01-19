@@ -1,10 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
-using Android.Net;
 using Android.OS;
 using Android.Provider;
+using Android.Util;
 using Avalonia;
 using Avalonia.Android;
 using Avalonia.Maui;
@@ -13,6 +14,8 @@ using Microsoft.Maui.ApplicationModel;
 using UndertaleModToolAvalonia.Android.NativeViews;
 using UndertaleModToolAvalonia.NativeViews;
 using UTMTdrid;
+using Environment = Android.OS.Environment;
+using Uri = Android.Net.Uri;
 
 namespace UndertaleModToolAvalonia.Android
 {
@@ -30,7 +33,15 @@ namespace UndertaleModToolAvalonia.Android
 
         public MainActivity()
         {
-            //ISoraEditorAndroid.Implementation = new SoraEditorAndroid(this);
+            try
+            {
+                ISoraEditorAndroid.Implementation = new SoraEditorAndroid(this);
+            }
+            catch (Exception e)
+            {
+                Log.Error("ISoraEditorAndroid", e.Message);
+            }
+            
         }
         protected override AppBuilder CustomizeAppBuilder(AppBuilder builder)
         {
